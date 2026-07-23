@@ -1,0 +1,3 @@
+sample_id	assay	platform	fastq_r1	fastq_r2	library_id	platform_unit	sequencing_center	read_group_id	expected_chromosome_complement	capture_intervals	reportable_intervals
+HG002	WGS	ILLUMINA	/data/HG002_R1.fastq.gz	/data/HG002_R2.fastq.gz	HG002_LIB1	FLOWCELL1.1	CLINICAL_LAB	HG002.FC1.L1	XY	NA	/intervals/wgs-reportable.bed.gz
+EXOME_001	WES	GENEMIND	/data/EXOME_001_R1.fastq.gz	/data/EXOME_001_R2.fastq.gz	EXOME_001_LIB1	FLOWCELL2.2	CLINICAL_LAB	EXOME_001.FC2.L2	XX	/intervals/exome-capture.bed.gz	/intervals/exome-reportable.bed.gz

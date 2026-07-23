@@ -1,0 +1,13 @@
+column	required	type	validation
+sample_id	yes	identifier	unique; [A-Za-z0-9][A-Za-z0-9._-]*
+assay	yes	enum	WGS or WES
+platform	yes	enum	ILLUMINA or GENEMIND
+fastq_r1	yes	FASTQ path	readable .fastq/.fq optionally gzip-compressed
+fastq_r2	yes	FASTQ path	readable .fastq/.fq optionally gzip-compressed; different from R1
+library_id	yes	read-group identifier	[A-Za-z0-9][A-Za-z0-9._-]*
+platform_unit	yes	read-group identifier	[A-Za-z0-9][A-Za-z0-9._-]*
+sequencing_center	yes	read-group identifier	[A-Za-z0-9][A-Za-z0-9._-]*
+read_group_id	yes	read-group identifier	unique; [A-Za-z0-9][A-Za-z0-9._-]*
+expected_chromosome_complement	yes	enum	XX, XY, X0, XXY, XXX, XYY, OTHER, UNKNOWN, or NA
+capture_intervals	yes	BED path or NA	WES requires a readable BED; WGS requires NA
+reportable_intervals	yes	BED path	readable .bed or .bed.gz

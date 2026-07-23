@@ -1,0 +1,22 @@
+ClinicalSuite V2 preflight report
+Generated (UTC): 2026-07-23T00:00:00Z
+Status: FAIL
+Errors: 3
+Warnings: 1
+
+Errors
+------
+1. Mandatory resource missing or unreadable: GRCH38_FASTA (/reference/GRCh38.fa)
+2. Mandatory resource missing or unreadable: CLINVAR (/database/clinvar.vcf.gz)
+3. Missing container: /containers/deepvariant.sif
+
+Warnings
+--------
+1. Optional resource not declared: REVEL
+
+Checks
+------
+[FAIL] resources: Mandatory resource missing or unreadable: GRCH38_FASTA (/reference/GRCh38.fa)
+[FAIL] resources: Mandatory resource missing or unreadable: CLINVAR (/database/clinvar.vcf.gz)
+[FAIL] containers: Missing container: /containers/deepvariant.sif
+[WARN] resources: Optional resource not declared: REVEL

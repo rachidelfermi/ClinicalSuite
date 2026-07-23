@@ -1,0 +1,8 @@
+column	required	validation
+resource_id	yes	unique safe identifier
+path	yes	absolute or relative to REFERENCE_DIR; no URI, tilde, or parent traversal
+kind	yes	FILE or DIRECTORY
+requirement	yes	MANDATORY or OPTIONAL
+assembly	yes	GRCh38
+version	yes	pinned value; latest forbidden
+sha256	yes	SHA-256 for files; - permitted for directories

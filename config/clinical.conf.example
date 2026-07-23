@@ -1,0 +1,21 @@
+# ClinicalSuite V2 site/run configuration example.
+# Copy to clinical.conf and replace every site-specific path.
+RUN_ID=example-run-001
+RUN_ROOT=/srv/clinicalsuite/runs
+REFERENCE_DIR=/srv/clinicalsuite/references
+DATABASE_DIR=/srv/clinicalsuite/databases
+CONTAINER_DIR=/srv/clinicalsuite/containers
+ASSAY_PROFILE_DIR=/srv/clinicalsuite/assay-profiles
+ASSAY_PROFILE=illumina-wgs-v1
+SCRATCH_DIR=/scratch/clinicalsuite
+APPTAINER_BIN=/usr/bin/apptainer
+REFERENCE_BUILD=GRCh38
+THREADS=8
+MEMORY_GB=32
+CALLER_CONCURRENCY=3
+TIMEZONE=UTC
+LOCALE=C.UTF-8
+FILE_UMASK=0027
+MIN_RUN_FREE_GB=50
+MIN_SCRATCH_FREE_GB=100
+DISK_SPACE_POLICY=ERROR
