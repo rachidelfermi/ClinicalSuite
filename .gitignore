@@ -1,0 +1,72 @@
+###############################################################################
+# CLINICAL DATA AND RUN OUTPUTS
+###############################################################################
+
+runs/
+results/
+work/
+logs/
+tmp/
+*.bam
+*.bai
+*.cram
+*.crai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+!tests/data/fastq/HG002_test_R1.fastq.gz
+!tests/data/fastq/HG002_test_R2.fastq.gz
+*.g.vcf
+*.g.vcf.gz
+*.vcf
+*.vcf.gz
+
+###############################################################################
+# EXTERNAL REFERENCES, DATABASES, AND CONTAINER BINARIES
+###############################################################################
+
+references/*
+!references/README.md
+databases/*
+!databases/README.md
+containers/*.sif
+containers/*.sif.sha256
+
+###############################################################################
+# LOCAL CONFIGURATION AND SECRETS
+###############################################################################
+
+config/*.conf
+config/samples.tsv
+*.env
+*.pem
+*.key
+
+###############################################################################
+# GENERATED DEVELOPMENT FILES
+###############################################################################
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+htmlcov/
+container_validation_report.txt
+!containers/container_validation_report.txt
+
+# Local build inputs are checksum-verified and may be recreated by build.sh.
+containers/.build/
+
+###############################################################################
+# EDITOR AND OPERATING-SYSTEM FILES
+###############################################################################
+
+.DS_Store
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
